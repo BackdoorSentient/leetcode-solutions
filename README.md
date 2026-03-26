@@ -44,25 +44,6 @@ graphs/
 
 ---
 
-## 🧠 Example Solution Format
-
-```python
-# Problem: Two Sum
-# Approach: Use hashmap to store visited elements
-# Time Complexity: O(n)
-# Space Complexity: O(n)
-
-def twoSum(nums, target):
-    hashmap = {}
-    for i, num in enumerate(nums):
-        diff = target - num
-        if diff in hashmap:
-            return [hashmap[diff], i]
-        hashmap[num] = i
-```
-
----
-
 ## 🎯 Goals
 
 * Solve problems consistently
