@@ -42,5 +42,3 @@ class Solution:
             count +=hashmap.get(mod,0)
             hashmap[mod]=hashmap.get(mod,0)+1
         return count
-
-               
