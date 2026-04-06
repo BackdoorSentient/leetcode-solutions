@@ -29,30 +29,30 @@ This repository is not just a collection of solutions — it follows a **structu
 
 ## 📂 Folder Structure (Pattern-Based)
 binary_search/
-├── binary_search.py
-├── search_insert.py
-├── search_in_rotated_sorted_array.py
-├── koko_eating_bananas.py
+  - binary_search.py
+  - search_insert.py
+  - search_in_rotated_sorted_array.py
+  - koko_eating_bananas.py
 
 hashmap/
-├── two_sum.py
+  - two_sum.py
 
 prefix_sum/
-├── contiguous_array.py
-├── subarray_sum_equals_k.py
-├── subarray_sums_divisible_by_k.py
+  - contiguous_array.py
+  - subarray_sum_equals_k.py
+  - subarray_sums_divisible_by_k.py
 
 sliding_window/
-├── maximum_average_subarray.py
-├── min_subarray_len.py
-├── len_of_longest_substtring.py
-├── character_replacement.py
-├── max_consecutive_ones_III.py
-├── max_consequitives_ones.py
-├── min_window_substring.py
-├── binary_subarrays_with_sum.py
-├── count_number_of_nice_subarrays.py
-├── number_of_subarrays.py
+  - maximum_average_subarray.py
+  - min_subarray_len.py
+  - len_of_longest_substtring.py
+  - character_replacement.py
+  - max_consecutive_ones_III.py
+  - max_consequitives_ones.py
+  - min_window_substring.py
+  - binary_subarrays_with_sum.py
+  - count_number_of_nice_subarrays.py
+  - number_of_subarrays.py
 
 README.md
 
