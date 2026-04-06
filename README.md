@@ -54,6 +54,9 @@ sliding_window/
   - count_number_of_nice_subarrays.py
   - number_of_subarrays.py
 
+math/
+  - palindrome_number.py
+
 README.md
 
 
@@ -109,6 +112,11 @@ README.md
 
 ### 🧠 Hash Map
 - Two Sum ✅
+
+---
+
+### 🔢 Math
+- Palindrome Number ✅
 
 ---
 
