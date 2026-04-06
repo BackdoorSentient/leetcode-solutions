@@ -27,9 +27,41 @@ This repository is not just a collection of solutions — it follows a **structu
 
 ---
 
-## 📘 DSA Roadmap (Pattern-Based Learning)
+## 📂 Folder Structure (Pattern-Based)
+binary_search/
+├── binary_search.py
+├── search_insert.py
+├── search_in_rotated_sorted_array.py
+├── koko_eating_bananas.py
 
-### 🪟 Sliding Window (Started)
+hashmap/
+├── two_sum.py
+
+prefix_sum/
+├── contiguous_array.py
+├── subarray_sum_equals_k.py
+├── subarray_sums_divisible_by_k.py
+
+sliding_window/
+├── maximum_average_subarray.py
+├── min_subarray_len.py
+├── len_of_longest_substtring.py
+├── character_replacement.py
+├── max_consecutive_ones_III.py
+├── max_consequitives_ones.py
+├── min_window_substring.py
+├── binary_subarrays_with_sum.py
+├── count_number_of_nice_subarrays.py
+├── number_of_subarrays.py
+
+README.md
+
+
+---
+
+## 📘 DSA Roadmap (Progress Tracking)
+
+### 🪟 Sliding Window (Strong Area)
 - Maximum Average Subarray I ✅
 - Minimum Size Subarray Sum ✅
 - Longest Substring Without Repeating Characters ✅
@@ -38,6 +70,7 @@ This repository is not just a collection of solutions — it follows a **structu
 - Minimum Window Substring ✅
 - Binary Subarrays With Sum ✅
 - Count Number of Nice Subarrays ✅
+- Number of Subarrays ✅
 
 🔜 Upcoming:
 - Fruit Into Baskets
@@ -47,7 +80,7 @@ This repository is not just a collection of solutions — it follows a **structu
 
 ---
 
-### 🔍 Binary Search
+### 🔍 Binary Search (Strong)
 - Binary Search ✅
 - Search Insert Position ✅
 - Search in Rotated Sorted Array ✅
@@ -62,15 +95,15 @@ This repository is not just a collection of solutions — it follows a **structu
 
 ---
 
-### 📊 Prefix Sum / Hashing
+### 📊 Prefix Sum / Hashing (Improving)
 - Subarray Sum Equals K ✅
 - Subarray Sums Divisible by K ✅
 - Contiguous Array ✅
 
 🔜 Upcoming:
 - Continuous Subarray Sum
-- Binary Subarrays With Sum
-- Count Number of Nice Subarrays
+- Binary Subarrays With Sum (revision)
+- Count Number of Nice Subarrays (revision)
 
 ---
 
