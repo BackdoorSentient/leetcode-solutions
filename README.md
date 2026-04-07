@@ -27,9 +27,10 @@ This repository is not just a collection of solutions — it follows a **structu
 
 ---
 
-## 📂 Folder Structure (Pattern-Based)
+## 📂 Folder Structure
+
+```
 leetcode-solutions/
-│
 ├── patterns/
 │   ├── sliding-window.md
 │   ├── two-pointers.md
@@ -58,24 +59,56 @@ leetcode-solutions/
 │
 ├── problems/
 │   ├── sliding-window/
+│   │   ├── maximum_average_subarray.py
+│   │   ├── minimum_size_subarray_sum.py
+│   │   ├── longest_substring_without_repeating.py
+│   │   ├── longest_repeating_character_replacement.py
+│   │   ├── max_consecutive_ones_iii.py
+│   │   ├── minimum_window_substring.py
+│   │   ├── binary_subarrays_with_sum.py
+│   │   ├── count_number_of_nice_subarrays.py
+│   │   ├── number_of_subarrays.py
+│   │
 │   ├── binary-search/
+│   │   ├── binary_search.py
+│   │   ├── search_insert_position.py
+│   │   ├── search_in_rotated_sorted_array.py
+│   │   ├── koko_eating_bananas.py
+│   │
 │   ├── prefix-sum/
+│   │   ├── contiguous_array.py
+│   │   ├── subarray_sum_equals_k.py
+│   │   ├── subarray_sums_divisible_by_k.py
+│   │
 │   ├── hashmap/
+│   │   ├── two_sum.py
+│   │
 │   ├── two-pointers/
+│   │
 │   ├── linked-list/
+│   │
 │   ├── trees/
+│   │
 │   ├── graphs/
+│   │
 │   ├── stack/
+│   │
 │   ├── heap/
+│   │
 │   ├── greedy/
+│   │
 │   ├── dp/
+│   │
 │   ├── backtracking/
+│   │
 │   ├── trie/
+│   │
 │   ├── intervals/
+│   │
 │   ├── bit-manipulation/
 │
-├── README.md
-
+└── README.md
+```
 
 ---
 
