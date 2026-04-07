@@ -28,198 +28,181 @@ This repository is not just a collection of solutions — it follows a **structu
 ---
 
 ## 📂 Folder Structure (Pattern-Based)
-binary_search/
-  - binary_search.py
-  - search_insert.py
-  - search_in_rotated_sorted_array.py
-  - koko_eating_bananas.py
+leetcode-solutions/
+│
+├── patterns/
+│   ├── sliding-window.md
+│   ├── two-pointers.md
+│   ├── fast-slow-pointers.md
+│   ├── prefix-sum.md
+│   ├── binary-search.md
+│   ├── kadane.md
+│   ├── greedy.md
+│   ├── intervals.md
+│   ├── stack.md
+│   ├── monotonic-stack.md
+│   ├── monotonic-queue.md
+│   ├── heap.md
+│   ├── linked-list.md
+│   ├── trees.md
+│   ├── graphs.md
+│   ├── topological-sort.md
+│   ├── union-find.md
+│   ├── backtracking.md
+│   ├── dynamic-programming.md
+│   ├── trie.md
+│   ├── bit-manipulation.md
+│   ├── string.md
+│   ├── math.md
+│   ├── simulation.md
+│
+├── problems/
+│   ├── sliding-window/
+│   ├── binary-search/
+│   ├── prefix-sum/
+│   ├── hashmap/
+│   ├── two-pointers/
+│   ├── linked-list/
+│   ├── trees/
+│   ├── graphs/
+│   ├── stack/
+│   ├── heap/
+│   ├── greedy/
+│   ├── dp/
+│   ├── backtracking/
+│   ├── trie/
+│   ├── intervals/
+│   ├── bit-manipulation/
+│
+├── README.md
 
-hashmap/
-  - two_sum.py
 
-prefix_sum/
-  - contiguous_array.py
-  - subarray_sum_equals_k.py
-  - subarray_sums_divisible_by_k.py
-
-sliding_window/
-  - maximum_average_subarray.py
-  - min_subarray_len.py
-  - len_of_longest_substtring.py
-  - character_replacement.py
-  - max_consecutive_ones_III.py
-  - max_consequitives_ones.py
-  - min_window_substring.py
-  - binary_subarrays_with_sum.py
-  - count_number_of_nice_subarrays.py
-  - number_of_subarrays.py
-
-math/
-  - palindrome_number.py
-
-README.md
+---
 
 
 ---
 
-## 📘 DSA Roadmap (Progress Tracking)
+## 📘 Patterns Covered
 
-### 🪟 Sliding Window (Strong Area)
-- Maximum Average Subarray I ✅
-- Minimum Size Subarray Sum ✅
-- Longest Substring Without Repeating Characters ✅
-- Longest Repeating Character Replacement ✅
-- Max Consecutive Ones III ✅
-- Minimum Window Substring ✅
-- Binary Subarrays With Sum ✅
-- Count Number of Nice Subarrays ✅
-- Number of Subarrays ✅
+- Sliding Window  
+- Two Pointers  
+- Fast & Slow Pointers  
+- Prefix Sum  
+- Binary Search  
+- Kadane’s Algorithm  
+- Greedy  
+- Intervals  
+- Stack  
+- Monotonic Stack  
+- Monotonic Queue  
+- Heap / Priority Queue  
+- Linked List  
+- Trees  
+- Graphs  
+- Topological Sort  
+- Union Find  
+- Backtracking  
+- Dynamic Programming  
+- Trie  
+- Bit Manipulation  
+- Strings  
+- Math  
+- Simulation  
 
-🔜 Upcoming:
-- Fruit Into Baskets
-- Subarrays with K Different Integers
-- Permutation in String
-- Find All Anagrams in a String
-
----
-
-### 🔍 Binary Search (Strong)
-- Binary Search ✅
-- Search Insert Position ✅
-- Search in Rotated Sorted Array ✅
-- Koko Eating Bananas ✅
-
-🔜 Upcoming:
-- Find Minimum in Rotated Sorted Array
-- Sqrt(x)
-- Find Peak Element
-- First and Last Position
-- Capacity To Ship Packages
-
----
-
-### 📊 Prefix Sum / Hashing (Improving)
-- Subarray Sum Equals K ✅
-- Subarray Sums Divisible by K ✅
-- Contiguous Array ✅
-
-🔜 Upcoming:
-- Continuous Subarray Sum
-- Binary Subarrays With Sum (revision)
-- Count Number of Nice Subarrays (revision)
+Each pattern includes:
+- Core idea  
+- Intuition  
+- When to use  
+- Common mistakes  
+- Example problems  
 
 ---
 
-### 🧠 Hash Map
-- Two Sum ✅
+## 📊 DSA Roadmap (Progress Tracking)
+
+### Sliding Window (Strong)
+- Maximum Average Subarray I  
+- Minimum Size Subarray Sum  
+- Longest Substring Without Repeating Characters  
+- Longest Repeating Character Replacement  
+- Max Consecutive Ones III  
+- Minimum Window Substring  
+- Binary Subarrays With Sum  
+- Count Number of Nice Subarrays  
+
+Upcoming:
+- Fruit Into Baskets  
+- Subarrays with K Different Integers  
+- Permutation in String  
+- Find All Anagrams in a String  
 
 ---
 
-### 🔢 Math
-- Palindrome Number ✅
+### Binary Search
+- Binary Search  
+- Search Insert Position  
+- Search in Rotated Sorted Array  
+- Koko Eating Bananas  
+
+Upcoming:
+- Find Minimum in Rotated Sorted Array  
+- Sqrt(x)  
+- Find Peak Element  
+- First and Last Position  
+- Capacity To Ship Packages  
 
 ---
 
-### 🔤 Strings
-- Longest Substring Without Repeating Characters ✅
+### Prefix Sum / Hashing
+- Subarray Sum Equals K  
+- Subarray Sums Divisible by K  
+- Contiguous Array  
 
-🔜 Upcoming:
-- Valid Palindrome
-- Group Anagrams
-- Longest Palindromic Substring
-
----
-
-### 🌳 Trees (Upcoming - Critical)
-- Maximum Depth of Binary Tree
-- Invert Binary Tree
-- Level Order Traversal
-- Diameter of Binary Tree
+Upcoming:
+- Continuous Subarray Sum  
+- Binary Subarrays With Sum  
+- Count Number of Nice Subarrays  
 
 ---
 
-### 🌐 Graphs (Upcoming - High Priority)
-- Number of Islands
-- Course Schedule
-- Rotting Oranges
-- Clone Graph
+### Next Focus Areas
+- Trees  
+- Graphs  
+- Stack / Monotonic Stack  
+- Backtracking  
+- Dynamic Programming  
+- Greedy  
+- Heap  
 
 ---
 
-### 📦 Stack / Monotonic Stack (Upcoming)
-- Valid Parentheses
-- Daily Temperatures
-- Next Greater Element
+## 🔥 Current Focus
+
+- Subarray Sum Equals K  
+- Product of Array Except Self  
+- Maximum Subarray  
+- Jump Game  
+- 3Sum Closest  
+- Sort Colors  
+- Search in Rotated Sorted Array  
+- Jump Game II  
 
 ---
 
-### 🔁 Backtracking (Upcoming)
-- Subsets
-- Permutations
-- Combination Sum
+## ⏱️ Weekly Plan
+
+Day 1–2 → Sliding Window  
+Day 3 → Binary Search  
+Day 4 → Trees + Graphs  
+Day 5 → Stack + Heap  
+Day 6 → Backtracking + Linked List  
+Day 7 → DP + Greedy  
+
+Repeat cycle.
 
 ---
 
-### 🧮 Dynamic Programming (Upcoming)
-- Climbing Stairs
-- House Robber
-- Coin Change
-- Longest Increasing Subsequence
-
----
-
-### ⚡ Arrays / Greedy (In Progress)
-- Container With Most Water
-- 3Sum
-
-🔜 Upcoming:
-- Product of Array Except Self
-- Maximum Product Subarray
-- Jump Game
-- Gas Station
-
----
-
-### 🧵 Linked List (Upcoming)
-- Reverse Linked List
-- Merge Two Sorted Lists
-- Linked List Cycle
-
----
-
-### 🪙 Heap / Priority Queue (Upcoming)
-- Kth Largest Element
-- Top K Frequent Elements
-
----
-
-## 🔥 Current Focus (High Priority Problems)
-
-1. Subarray Sum Equals K  
-2. Product of Array Except Self  
-3. Maximum Subarray  
-4. Jump Game  
-5. 3Sum Closest  
-6. Sort Colors  
-7. Search in Rotated Sorted Array  
-8. Jump Game II  
-
----
-
-## ⏱️ Weekly Execution Plan
-
-- Day 1–2 → Sliding Window  
-- Day 3 → Binary Search  
-- Day 4 → Trees + Graphs  
-- Day 5 → Stack + Heap  
-- Day 6 → Backtracking + Linked List  
-- Day 7 → DP + Greedy  
-
-Repeat cycle with new problems.
-
----
-
-## 🧾 Code Template Used
+## 🧾 Code Template
 
 ```python
 # Pattern:
