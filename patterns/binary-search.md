@@ -1,76 +1,184 @@
-# Binary Search Pattern
+# Binary Search
 
-## 🧠 Core Idea
-Divide search space in half repeatedly.
+## What is Binary Search?
+
+Binary Search is used to find elements in a sorted space by repeatedly dividing the search range in half.
 
 ---
 
-## 🔍 Why It Works
-Each step removes half the possibilities → very fast
+## Core Idea
 
-Time complexity:
+Eliminate half of the search space every step
+
+---
+
+## When to Use Binary Search
+
+Use when:
+- Array is sorted
+- You need O(log n)
+- You are searching for answer in a range
+
+---
+
+## Types of Binary Search
+
+---
+
+### 1. Classic Binary Search
+
+```
+while left <= right:
+    mid = (left + right) // 2
+
+    if nums[mid] == target:
+        return mid
+    elif nums[mid] < target:
+        left = mid + 1
+    else:
+        right = mid - 1
+```
+
+---
+
+### 2. Lower Bound
+
+First occurrence
+
+---
+
+### 3. Upper Bound
+
+Last occurrence
+
+---
+
+### 3. Binary Search on Answer (IMPORTANT)
+
+Search in possible answers, not array
+
+Used in:
+- Koko Eating Bananas
+- Capacity to Ship Packages
+
+---
+
+## Binary Search on Answer Pattern
+
+```
+def can(mid):
+    return True/False
+
+left, right = range
+
+while left < right:
+    mid = (left + right) // 2
+
+    if can(mid):
+        right = mid
+    else:
+        left = mid + 1
+```
+
+---
+
+## Key Concepts
+
+---
+
+### 1. Monotonic Function
+
+Condition changes only once
+
+Example:
+TTTTFFFF or FFFFTTTT
+
+---
+
+### 2. Search Space
+
+Can be:
+- indices
+- values
+- answer range
+
+---
+
+### 3. Mid Calculation
+
+```
+mid = left + (right - left) // 2
+```
+
+Avoid overflow
+
+---
+
+## Variations
+
+---
+
+### 1. Search in Rotated Array
+
+Check sorted half
+
+---
+
+### 2. Find Minimum in Rotated Array
+
+---
+
+### 3. Peak Element
+
+Compare neighbors
+
+---
+
+### 4. First and Last Position
+
+Two binary searches
+
+---
+
+## Time Complexity
+
 O(log n)
 
 ---
 
-## 🚀 When to Use
-- Sorted arrays
-- Monotonic functions
-- "Find minimum/maximum valid answer"
+## Common Mistakes
 
----
-
-## 🧩 Two Main Types
-
-### 1. Classic Binary Search
-Search element in sorted array
-
----
-
-### 2. Binary Search on Answer (IMPORTANT)
-Search in range of possible answers
-
-Example:
-- Koko Eating Bananas
-- Capacity to ship packages
-
----
-
-## ⚡ General Template
-1. Define search space
-2. Find mid
-3. Check condition
-4. Move left/right
-
----
-
-## 🧠 Intuition
-Binary search is not about array  
-It is about **searching in a sorted/monotonic space**
-
----
-
-## ⚠️ Common Mistakes
 - Infinite loop (wrong condition)
-- Overflow in mid calculation
-- Wrong boundary updates
-- Not understanding monotonic condition
+- Wrong mid update
+- Using <= vs <
+- Not identifying monotonic behavior
 
 ---
 
-## 🔄 Time & Space Complexity
-- Time: O(log n)
-- Space: O(1)
+## Must Solve Problems
 
----
-
-## 🧩 Example Problems
 - Binary Search
+- Search Insert Position
 - Search in Rotated Sorted Array
+- Find Minimum in Rotated Sorted Array
 - Koko Eating Bananas
+- Find Peak Element
+- First and Last Position
 
 ---
 
-## 🧠 Key Insight
-Binary search works on:
-➡️ **Monotonic behavior (True/False zones)**
+## Interview Strategy
+
+1. Identify sorted / monotonic behavior
+2. Decide search space
+3. Write template
+4. Adjust conditions carefully
+
+---
+
+## Summary
+
+Binary Search:
+- Reduces search space
+- Works on sorted or monotonic problems
+- Very important for interviews

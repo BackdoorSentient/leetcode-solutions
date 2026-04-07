@@ -1,92 +1,141 @@
-# Sliding Window Pattern
+# Sliding Window
 
-## 🧠 Core Idea
-Instead of recalculating values for every subarray, maintain a **window** that moves across the array.
+## What is Sliding Window?
 
-Reuse previous computations by:
-- Adding new element
-- Removing old element
+Sliding Window is used to process a **subarray or substring of size k or variable size** efficiently.
 
 ---
 
-## 🔍 Why It Works
-Brute force checks all subarrays → O(n²)
+## Core Idea
 
-Sliding window avoids rework → O(n)
-
----
-
-## 🚀 When to Use
-Look for:
-- Subarray / substring
-- "Maximum / Minimum"
-- "Longest / Shortest"
-- Contiguous elements
+Instead of recomputing every window:
+- Expand window (right pointer)
+- Shrink window (left pointer)
 
 ---
 
-## 🧩 Types of Sliding Window
+## Types of Sliding Window
+
+---
 
 ### 1. Fixed Size Window
-Window size = constant
 
-Example:
-- Maximum average subarray of size k
+Window size = k
+
+```
+window_sum += nums[i]
+
+if i >= k:
+    window_sum -= nums[i-k]
+```
 
 ---
 
 ### 2. Variable Size Window
-Window expands and shrinks based on condition
 
-Example:
-- Longest substring without repeating characters
+Adjust size dynamically
 
----
-
-## ⚡ General Template
-
-### Fixed Window
-1. Build first window
-2. Slide:
-   - Add next element
-   - Remove previous element
+```
+while condition invalid:
+    shrink window
+```
 
 ---
 
-### Variable Window
-1. Expand window (right++)
-2. While condition breaks → shrink (left++)
-3. Update result
+## General Template
+
+```
+left = 0
+
+for right in range(n):
+    add nums[right]
+
+    while condition not satisfied:
+        remove nums[left]
+        left += 1
+
+    update answer
+```
 
 ---
 
-## 🧠 Intuition
-Think like:
-"Can I reuse previous work instead of recalculating?"
+## Key Patterns
 
 ---
 
-## ⚠️ Common Mistakes
-- Forgetting to shrink window
-- Wrong condition for shrinking
-- Updating result at wrong time
-- Not handling edge cases (empty, k > n)
+### 1. Longest Substring Without Repeating Characters
+
+Use set/map
 
 ---
 
-## 🔄 Time & Space Complexity
-- Time: O(n)
-- Space: O(1) or O(k)
+### 2. Minimum Window Substring
+
+Shrink window when valid
 
 ---
 
-## 🧩 Example Problems
-- Maximum Average Subarray
+### 3. Max Consecutive Ones
+
+Flip limited zeros
+
+---
+
+### 4. Subarrays with K Constraint
+
+Combine with prefix sum or hashmap
+
+---
+
+## When to Use
+
+Use when:
+- Subarray / substring problems
+- Continuous segment
+- "Longest", "smallest", "count"
+
+---
+
+## Time Complexity
+
+O(n)
+
+Each element:
+- Visited at most twice
+
+---
+
+## Common Mistakes
+
+- Not shrinking window properly
+- Wrong condition check
+- Infinite loop in while
+- Not updating answer correctly
+
+---
+
+## Must Solve Problems
+
+- Maximum Average Subarray I
+- Minimum Size Subarray Sum
 - Longest Substring Without Repeating Characters
 - Minimum Window Substring
+- Max Consecutive Ones III
 
 ---
 
-## 🧠 Key Insight
-Sliding window is about:
-➡️ **Avoiding repeated work on overlapping subarrays**
+## Interview Strategy
+
+1. Identify window
+2. Expand right
+3. Shrink left when needed
+4. Track result
+
+---
+
+## Summary
+
+Sliding Window:
+- Optimizes subarray problems
+- Converts O(n²) → O(n)
+- One of the most important patterns

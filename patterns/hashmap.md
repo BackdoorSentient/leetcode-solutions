@@ -1,80 +1,165 @@
-# HashMap Pattern
+# Hash Map (Hash Table)
 
-## 🧠 Core Idea
-A HashMap (dictionary) stores data as **key → value** pairs and gives **O(1)** average time for insert, delete, and lookup.
+## What is a Hash Map?
 
-Instead of re-computing or re-checking values, you **store information while iterating** and reuse it instantly.
-
----
-
-## 🔍 Why It Works
-Hashing converts a key into an index in memory.
-
-This allows:
-- Direct access instead of scanning the whole array
-- Turning **O(n²)** problems into **O(n)**
+A Hash Map stores data in **key → value pairs** and provides **O(1) average time** for insert, delete, and lookup.
 
 ---
 
-## 🚀 When to Use
-Use HashMap when you see:
-- "Find two elements..."
-- "Check if something exists"
-- "Count frequency"
-- "Track previous values"
+## Core Idea
+
+Use a hash function to map keys to indices for fast access.
 
 ---
 
-## 🧩 Common Use Cases
+## When to Use Hash Map
 
-### 1. Lookup Optimization
-Store values so you don’t re-scan.
-
-### 2. Frequency Counting
-Count occurrences of elements.
-
-### 3. Complement Problems
-Example: Two Sum → check `target - num`
-
-### 4. Mapping Relationships
-Example: character → value mapping
+Use when:
+- You need fast lookup
+- Checking existence
+- Counting frequency
+- Mapping relationships
 
 ---
 
-## ⚡ Thinking Process
-Ask:
-- Can I store something to avoid repeating work?
-- Can I check existence in O(1)?
+## Basic Operations
 
-If yes → HashMap
+```
+mp = {}
 
----
-
-## ⚠️ Common Mistakes
-- Inserting before checking (wrong for Two Sum)
-- Overwriting keys unintentionally
-- Not handling duplicates
-- Assuming order (HashMap is unordered)
+mp[key] = value      # insert/update
+value = mp[key]      # access
+del mp[key]          # delete
+key in mp            # check existence
+```
 
 ---
 
-## 🔄 Time & Space Complexity
-- Time: O(n)
-- Space: O(n)
-
-Tradeoff: You use extra memory to gain speed.
+## Common Patterns
 
 ---
 
-## 🧩 Example Problems
-- Two Sum
-- Roman to Integer
+### 1. Frequency Counting
+
+```
+for num in nums:
+    mp[num] = mp.get(num, 0) + 1
+```
+
+Used in:
+- Top K Frequent Elements
 - Valid Anagram
-- Contains Duplicate
 
 ---
 
-## 🧠 Key Insight
-HashMap is about **memory vs speed tradeoff**.
+### 2. Two Sum Pattern
 
-You store information → reduce time complexity.
+Store complement
+
+```
+for i, num in enumerate(nums):
+    diff = target - num
+    if diff in mp:
+        return [mp[diff], i]
+    mp[num] = i
+```
+
+---
+
+### 3. Prefix Sum + Hash Map
+
+Store prefix sums
+
+```
+mp = {0: 1}
+prefix = 0
+
+for num in nums:
+    prefix += num
+    count += mp.get(prefix - k, 0)
+    mp[prefix] = mp.get(prefix, 0) + 1
+```
+
+---
+
+### 4. Grouping
+
+```
+mp = {}
+
+for word in strs:
+    key = sorted(word)
+    mp[key].append(word)
+```
+
+Used in:
+- Group Anagrams
+
+---
+
+### 5. First Occurrence Tracking
+
+Store index of first appearance
+
+---
+
+## Collision Handling (Concept)
+
+- Two keys can map to same index
+- Handled via chaining or open addressing
+
+(Not required for interviews but good to know)
+
+---
+
+## Time Complexity
+
+| Operation | Time |
+|----------|------|
+| Insert | O(1) |
+| Search | O(1) |
+| Delete | O(1) |
+
+Worst case: O(n)
+
+---
+
+## Space Complexity
+
+O(n)
+
+---
+
+## Common Mistakes
+
+- Forgetting default values
+- Using list instead of tuple/string as key
+- Not handling missing keys
+- Mutating keys (invalid)
+
+---
+
+## Must Solve Problems
+
+- Two Sum
+- Valid Anagram
+- Group Anagrams
+- Subarray Sum Equals K
+- Top K Frequent Elements
+
+---
+
+## Interview Strategy
+
+1. Think: can I trade space for speed?
+2. Use hashmap for lookup
+3. Combine with prefix sum if needed
+
+---
+
+## Summary
+
+Hash Map:
+- Fast lookup structure
+- Used in almost every problem
+- Core tool for optimization

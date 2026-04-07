@@ -1,79 +1,125 @@
-# Two Pointers Pattern
+# Two Pointers
 
-## 🧠 Core Idea
-Use two indices instead of nested loops to reduce time complexity.
+## What is Two Pointers?
 
----
-
-## 🔍 Why It Works
-Nested loops → O(n²)  
-Two pointers → O(n)
-
-You reduce unnecessary comparisons.
+Two pointers use two indices to traverse data efficiently.
 
 ---
 
-## 🚀 When to Use
-- Sorted arrays
-- Pair problems
-- Palindrome checking
-- Removing duplicates
+## Core Idea
+
+Instead of nested loops:
+- Use two pointers to reduce complexity
 
 ---
 
-## 🧩 Types
+## Types of Two Pointers
+
+---
 
 ### 1. Opposite Direction
-- Left at start
-- Right at end
+
+```
+left = 0
+right = n - 1
+
+while left < right:
+```
 
 Used in:
-- Pair sum
-- Palindrome
+- Sorted arrays
+- Palindrome problems
 
 ---
 
-### 2. Same Direction (Fast & Slow)
-- Fast pointer moves ahead
-- Slow pointer tracks result
+### 2. Same Direction
+
+```
+slow = 0
+
+for fast in range(n):
+```
 
 Used in:
-- Remove duplicates
-- Linked list cycles
+- Removing duplicates
+- Partitioning
 
 ---
 
-## ⚡ General Strategy
-- Compare values
-- Move pointers based on condition
+## Key Patterns
 
 ---
 
-## 🧠 Intuition
-Instead of checking all pairs:
-→ Use structure (sorted array) to eliminate possibilities
+### 1. Pair Sum in Sorted Array
+
+```
+while left < right:
+    if nums[left] + nums[right] == target:
+        return True
+    elif sum < target:
+        left += 1
+    else:
+        right -= 1
+```
 
 ---
 
-## ⚠️ Common Mistakes
-- Using on unsorted array (when not allowed)
+### 2. Remove Duplicates
+
+---
+
+### 3. Container With Most Water
+
+---
+
+### 4. Partition Array
+
+---
+
+## When to Use
+
+Use when:
+- Sorted array
+- Pair/triplet problems
+- Palindrome checks
+- Subarrays with conditions
+
+---
+
+## Time Complexity
+
+O(n)
+
+---
+
+## Common Mistakes
+
+- Using on unsorted data (when not allowed)
 - Moving wrong pointer
-- Infinite loops (wrong condition)
+- Missing edge cases
 
 ---
 
-## 🔄 Time & Space Complexity
-- Time: O(n)
-- Space: O(1)
+## Must Solve Problems
+
+- Two Sum II
+- Container With Most Water
+- 3Sum
+- Remove Duplicates from Sorted Array
 
 ---
 
-## 🧩 Example Problems
-- Valid Palindrome
-- Two Sum II (sorted)
-- Remove Duplicates
+## Interview Strategy
+
+1. Check if sorted
+2. Use two pointers
+3. Decide movement logic
 
 ---
 
-## 🧠 Key Insight
-Two pointers = **smart traversal using structure**
+## Summary
+
+Two Pointers:
+- Eliminates nested loops
+- Very efficient
+- Core interview pattern
