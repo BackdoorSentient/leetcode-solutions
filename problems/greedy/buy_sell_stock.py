@@ -37,3 +37,6 @@ class Solution:
     
 sol=Solution()
 print(sol.maxProfit([7,1,5,3,6,4]))
+# Note:
+# This problem can also be seen as Dynamic Programming,
+# but it is optimally solved using a Greedy approach.
