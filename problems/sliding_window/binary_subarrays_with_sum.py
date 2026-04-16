@@ -3,16 +3,28 @@
 # Difficulty: Medium
 # Pattern: Prefix Sum + HashMap
 
+# Intuition:
+# We want to count subarrays whose sum = goal.
+# Instead of checking all subarrays (which is slow),
+# we keep track of running sum (prefix sum).
+#
+# At any point, if current_sum = prefixsum,
+# we check if there was a previous sum such that:
+# previous_sum = prefixsum - goal
+#
+# If yes, then the subarray between them has sum = goal.
+# So we count how many times (prefixsum - goal) has appeared before.
+
 # Approach:
-# - We use prefix sum to convert subarray sum problem into a lookup problem
-# - At any index, let current prefix sum = prefixsum
-# - We want: prefixsum - previous_prefixsum = goal
-#   ⇒ previous_prefixsum = prefixsum - goal
-# - So for each index, check how many times (prefixsum - goal) has appeared before
-# - Store frequency of prefix sums in hashmap
-# - Add that frequency to count (number of valid subarrays ending at current index)
-# - Update hashmap with current prefix sum
-# - Initialize hashmap with {0:1} to handle subarrays starting from index 0
+# - Use a variable 'prefixsum' to store running sum.
+# - Use a hashmap to store frequency of prefix sums.
+# - Initialize hashmap with {0:1} (to handle subarrays starting from index 0).
+# - Traverse the array:
+#     1. Add current number to prefixsum.
+#     2. Check if (prefixsum - goal) exists in hashmap:
+#        → If yes, add its frequency to count.
+#     3. Store/update current prefixsum in hashmap.
+# - Return the total count.
 
 # Time Complexity: O(n)
 # Space Complexity: O(n)
