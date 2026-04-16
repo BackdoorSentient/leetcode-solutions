@@ -1,4 +1,4 @@
-# Problem: Maximum Average Subarray I
+# Problem: 643 Maximum Average Subarray I
 # Link: https://leetcode.com/problems/maximum-average-subarray-i/
 # Difficulty: Easy
 # Pattern: Sliding Window (Fixed Size)
@@ -44,16 +44,16 @@ from typing import List
 
 class Solution:
     def findMaxAverage(self, nums: List[int], k: int) -> float:
-        window_sum = sum(nums[:k])
-        max_sum = window_sum
+        window_sum=sum(nums[:k])
+        max_sum=window_sum
 
-        for i in range(k, len(nums)):
-            window_sum += nums[i]       
-            window_sum -= nums[i - k]  
+        for i in range(k,len(nums)):
+            window_sum += nums[i]
+            window_sum -= nums[i-k]
 
-            max_sum = max(max_sum, window_sum)
+            max_sum=max(max_sum,window_sum)
 
-        return max_sum / k
+        return max_sum/k
 
 sol = Solution()
 print(sol.findMaxAverage([1,12,-5,-6,50,3],4))
