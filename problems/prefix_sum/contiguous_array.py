@@ -1,4 +1,4 @@
-# Problem: Contiguous Array
+# Problem: 525. Contiguous Array
 # Link: https://leetcode.com/problems/contiguous-array/
 # Difficulty: Medium
 # Pattern: Prefix Sum + HashMap
