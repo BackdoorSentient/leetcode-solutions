@@ -1,4 +1,4 @@
-# Problem: Count Number of Nice Subarrays
+# Problem: 1248. Count Number of Nice Subarrays
 # Link: https://leetcode.com/problems/count-number-of-nice-subarrays/
 # Difficulty: Medium
 # Pattern: Prefix Sum + HashMap
