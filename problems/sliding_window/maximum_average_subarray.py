@@ -1,4 +1,4 @@
-# Problem: 643 Maximum Average Subarray I
+# Problem: 643. Maximum Average Subarray I
 # Link: https://leetcode.com/problems/maximum-average-subarray-i/
 # Difficulty: Easy
 # Pattern: Sliding Window (Fixed Size)

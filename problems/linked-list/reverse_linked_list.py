@@ -29,7 +29,7 @@ from listnode import ListNode, build_linked_list, print_linked_list
 from typing import Optional
 
 class Solution:
-    def reverseLinkedList(self, head: Optional[ListNode]):
+    def reverseList(self, head: Optional[ListNode]):
         current = head
         prev = None
 
@@ -42,5 +42,5 @@ class Solution:
 
 sol = Solution()
 l = build_linked_list([1, 2, 3, 4, 5])
-reversed_head = sol.reverseLinkedList(l)
+reversed_head = sol.reverseList(l)
 print_linked_list(reversed_head)

@@ -74,7 +74,7 @@
 from typing import List
 
 class Solution:
-    def minSubarrayLength(self, nums: List[int], target: int):
+    def minSubArrayLen(self, nums: List[int], target: int):
         window_sum = 0
         left = 0
         min_length = float('inf')
@@ -92,4 +92,4 @@ class Solution:
 
 
 sol = Solution()
-print(sol.minSubarrayLength([2,3,1,2,4,3], 7))
+print(sol.minSubArrayLen([2,3,1,2,4,3], 7))

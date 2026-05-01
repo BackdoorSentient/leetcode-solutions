@@ -24,7 +24,7 @@
 # O(1) — No extra space is used apart from a few variables.
 
 class Solution:
-    def pali(self,s:str):
+    def isPalindrome(self,s:str):
         left=0
         right=len(s)-1
 
@@ -44,5 +44,5 @@ class Solution:
         return True
     
 sol=Solution()
-# print(sol.pali("A man, a plan, a canal: Panama"))
-print(sol.pali(".,"))
+# print(sol.isPalindrome("A man, a plan, a canal: Panama"))
+print(sol.isPalindrome(".,"))

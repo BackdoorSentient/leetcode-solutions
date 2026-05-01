@@ -1,4 +1,6 @@
 # Problem: 3. Longest Substring Without Repeating Characters
+# Link: https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
+# Difficulty: Medium
 # Pattern: Dynamic Size Sliding Window
 
 # Intuition:

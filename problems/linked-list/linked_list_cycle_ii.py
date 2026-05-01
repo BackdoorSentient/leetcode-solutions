@@ -33,7 +33,7 @@ from listnode import build_linked_list, ListNode, print_linked_list
 from typing import Optional
 
 class Solution:
-    def linked_list(self, head: Optional[ListNode]):
+    def detectCycle(self, head: Optional[ListNode]):
         slow = head
         fast = head
 
@@ -49,7 +49,7 @@ class Solution:
                     slow = slow.next
                 
                 return prt
-        return 0
+        return None
     
 
 def build_linked_list_with_cycle(arr, pos):
@@ -78,7 +78,7 @@ def build_linked_list_with_cycle(arr, pos):
 head = build_linked_list_with_cycle([3, 2, 0, -4], 1)
 
 sol = Solution()
-ans = sol.linked_list(head)
+ans = sol.detectCycle(head)
 
 if ans:
     print(ans.val)

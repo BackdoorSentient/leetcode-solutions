@@ -1,5 +1,5 @@
-# Problem: 28. Find the Index of the First Occurrence in a String
-# Link: https://leetcode.com/problems/summary-ranges/
+# Problem: 228. Summary Ranges
+# Link: https://leetcode.com/problems/summary-ranges/description/
 # Difficulty: Easy
 # Pattern: Two Pointer
 

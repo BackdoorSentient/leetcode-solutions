@@ -5,67 +5,22 @@
 # Topic: Array, String
 
 # Intuition:
-# Since the array is circular, the shortest path between two indices can be
-# either moving forward or wrapping around backward. For every occurrence
-# of the target, we calculate the direct distance and the circular distance,
-# and take the minimum.
+# The array is circular, so the shortest path to a target can be direct
+# or it can wrap around the end of the array.
+# For every place where target appears, we check both distances and keep the smaller one.
 
 # Approach:
-# Traverse the array and check for indices where words[i] == target.
-# For each such index:
-#   - Compute direct distance: abs(i - startIndex)
-#   - Compute circular distance: n - direct distance
-#   - Take the minimum of both distances
-# Keep track of the smallest distance across all occurrences.
-# If target is not found, return -1.
+# Walk through all words.
+# Whenever words[i] is target, find the direct distance using abs(i - startIndex).
+# The circular distance is n - direct distance.
+# Keep the smallest distance.
+# If target never appears, return -1.
 
 # Time Complexity:
-# O(n) — Single pass through the array.
+# O(n), because we check every word once.
 
 # Space Complexity:
-# O(1) — No extra space used.
-
-from typing import List
-
-class Solution:
-    def closestTarget(self, words: List[str], target: str, startIndex: int) -> int:
-        min_value=float('inf')
-        n=len(words)
-        for i in range(n):
-            if words[i]==target:
-
-                if i>startIndex:
-                    dist=i-startIndex
-                else:
-                    dist=startIndex-i
-                
-                min_value=min(min_value,dist,n-dist)
-        
-        return min_value if min_value != float('inf') else -1
-
-sol=Solution()
-print(sol.closestTarget(["hello","i","am","leetcode","hello"],"hello",1))
-
-
-# Intuition:
-# Since the array is circular, the shortest path between two indices can be
-# either moving forward or wrapping around. For each occurrence of the target,
-# we compute the direct distance and the circular distance, and take the minimum.
-
-# Approach:
-# Traverse the array and find indices where words[i] == target.
-# For each such index:
-#   - Compute direct distance using abs(i - startIndex)
-#   - Compute circular distance as n - direct distance
-#   - Take the minimum of both distances
-# Track the smallest distance among all occurrences.
-# If target is not found, return -1.
-
-# Time Complexity:
-# O(n) — Single pass through the array.
-
-# Space Complexity:
-# O(1) — No extra space used.
+# O(1), because we only use a few variables.
 
 from typing import List
 
@@ -76,11 +31,11 @@ class Solution:
 
         for i in range(n):
             if words[i] == target:
-                dist = abs(i - startIndex)          # direct distance
-                min_value = min(min_value, dist, n - dist)  # circular distance
+                dist = abs(i - startIndex)
+                min_value = min(min_value, dist, n - dist)
 
         return min_value if min_value != float('inf') else -1
 
 
 sol = Solution()
-print(sol.closestTarget(["hello","i","am","leetcode","hello"], "hello", 1))
+print(sol.closestTarget(["hello", "i", "am", "leetcode", "hello"], "hello", 1))

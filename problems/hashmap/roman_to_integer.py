@@ -18,7 +18,7 @@
 # Space Complexity: O(1)
 
 class Solution:
-    def romanInt(self,s:str):
+    def romanToInt(self,s:str):
 
         roman={
             "I":1,
@@ -40,4 +40,4 @@ class Solution:
         return count
     
 sol=Solution()
-print(sol.romanInt("III"))
+print(sol.romanToInt("III"))

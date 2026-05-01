@@ -28,7 +28,7 @@
 
 
 class Solution:
-    def charReplacement(self,s:str,k:int):
+    def characterReplacement(self,s:str,k:int):
         max_freq=0
         max_length=0
         freq={}
@@ -52,4 +52,4 @@ class Solution:
     
 
 sol=Solution()
-print(sol.charReplacement("ABAB",2))
+print(sol.characterReplacement("ABAB",2))

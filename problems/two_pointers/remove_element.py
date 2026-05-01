@@ -27,7 +27,7 @@
 from typing import List
 
 class Solution:
-    def removeElements(self, nums: List[int], val: int) -> int:
+    def removeElement(self, nums: List[int], val: int) -> int:
         k = 0
         for i in range(len(nums)):
             if nums[i] != val:
@@ -36,4 +36,4 @@ class Solution:
         return k
 
 sol = Solution()
-print(sol.removeElements([3,2,2,3], 3))
+print(sol.removeElement([3,2,2,3], 3))

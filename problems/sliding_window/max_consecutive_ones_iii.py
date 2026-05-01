@@ -1,11 +1,11 @@
-# Problem:1004. Max Consecutive Ones III
+# Problem: 1004. Max Consecutive Ones III
 # Link: https://leetcode.com/problems/max-consecutive-ones-iii/description/
 # Difficulty: Medium
-# Pattern: Silding Window
+# Pattern: Sliding Window
 
 from typing import List
 class Solution:
-    def longestOne(self,nums:List[int],k:int):
+    def longestOnes(self,nums:List[int],k:int):
         left=0
         max_length=0
         zero_count=0
@@ -24,4 +24,4 @@ class Solution:
         return max_length
 
 sol=Solution()
-print(sol.longestOne([1,1,1,0,0,0,1,1,1,1,0],2))
+print(sol.longestOnes([1,1,1,0,0,0,1,1,1,1,0],2))

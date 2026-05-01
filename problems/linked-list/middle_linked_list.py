@@ -31,15 +31,10 @@
 # We only use a few pointers and no extra space that grows with input size.
 
 
-from listnode import ListNode,build_linked_list,print_linked_list
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
-
 from typing import Optional
+from listnode import ListNode, build_linked_list, print_linked_list
 class Solution:
-    def middleList(self,head:Optional[ListNode]):
+    def middleNode(self,head:Optional[ListNode]):
         slow=head
         fast=head
 
@@ -55,6 +50,6 @@ head = build_linked_list([1, 2, 3, 4, 5])
 sol = Solution()
 
 # Get middle node
-middle = sol.middleList(head)
+middle = sol.middleNode(head)
 
 print_linked_list(middle)

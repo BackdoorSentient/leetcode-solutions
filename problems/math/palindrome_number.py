@@ -13,11 +13,11 @@
 # 3. Reverse the number using modulo and division.
 # 4. Compare reversed number with original value.
 
-# Time Complexity: O(n)
-# Space Complexity: O(n)
+# Time Complexity: O(log n)
+# Space Complexity: O(1)
 
 class Solution:
-    def paliNum(self,x:int)->bool:
+    def isPalindrome(self,x:int)->bool:
         if x<0:
             return False
         reverse=0
@@ -29,4 +29,4 @@ class Solution:
         return actual_val==reverse
 
 sol=Solution()
-print(sol.paliNum(-121))
+print(sol.isPalindrome(-121))

@@ -24,7 +24,7 @@
 from typing import List
 
 class Solution:
-    def threeSum(self,nums:List[int], target: int):
+    def threeSumClosest(self,nums:List[int], target: int):
         nums.sort()
         closest=float('inf')
 
@@ -47,4 +47,4 @@ class Solution:
         return closest
 
 sol=Solution()
-print(sol.threeSum([-1,2,1,-4],1))
+print(sol.threeSumClosest([-1,2,1,-4],1))

@@ -19,7 +19,7 @@ The goal is simple: solve problems, understand the pattern, write clean notes, a
 | Item | Count |
 |---|---:|
 | Problem folders | 10 |
-| Python problem files | 59 |
+| Python problem files | 57 |
 | Helper files | 1 |
 | Pattern note files | 26 |
 
@@ -33,12 +33,12 @@ Helper file:
 
 | Pattern | Problems in repo |
 |---|---:|
-| Sliding Window | 14 |
 | Two Pointers | 14 |
-| Binary Search | 7 |
-| Prefix Sum | 4 |
+| Sliding Window | 13 |
+| Binary Search | 6 |
 | Linked List | 6 |
 | Math | 5 |
+| Prefix Sum | 4 |
 | HashMap | 3 |
 | String | 3 |
 | Greedy | 2 |
@@ -50,6 +50,7 @@ Strong areas right now:
 - Two Pointers
 - Binary Search
 - Prefix Sum basics
+- Linked List basics
 
 Next areas to build properly:
 
@@ -70,10 +71,9 @@ Next areas to build properly:
 - [424. Longest Repeating Character Replacement](problems/sliding_window/character_replacement.py)
 - [1248. Count Number of Nice Subarrays](problems/sliding_window/count_number_of_nice_subarrays.py)
 - [438. Find All Anagrams in a String](problems/sliding_window/find_all_anagrams_in_string.py)
-- [904. Fruit Into Baskets](problems/sliding_window/fruit_into_basket.py)
-- [3. Longest Substring Without Repeating Characters](problems/sliding_window/len_of_longest_substtring.py)
-- [1004. Max Consecutive Ones III](problems/sliding_window/max_consecutive_ones_III.py)
-- [1004. Max Consecutive Ones III](problems/sliding_window/max_consequitives_ones.py)
+- [904. Fruit Into Baskets](problems/sliding_window/fruit_into_baskets.py)
+- [3. Longest Substring Without Repeating Characters](problems/sliding_window/longest_substring_without_repeating_characters.py)
+- [1004. Max Consecutive Ones III](problems/sliding_window/max_consecutive_ones_iii.py)
 - [643. Maximum Average Subarray I](problems/sliding_window/maximum_average_subarray.py)
 - [209. Minimum Size Subarray Sum](problems/sliding_window/min_subarray_len.py)
 - [76. Minimum Window Substring](problems/sliding_window/min_window_substring.py)
@@ -83,29 +83,28 @@ Next areas to build properly:
 
 ### Two Pointers
 
-- [15. 3Sum](problems/two_pointers/3_sum.py)
-- [16. 3Sum Closest](problems/two_pointers/3_sum_closest.py)
-- [18. 4Sum](problems/two_pointers/4_sum.py)
-- [28. Find the Index of the First Occurrence in a String](problems/two_pointers/find_index_of_first_occ.py)
+- [15. 3Sum](problems/two_pointers/three_sum.py)
+- [16. 3Sum Closest](problems/two_pointers/three_sum_closest.py)
+- [18. 4Sum](problems/two_pointers/four_sum.py)
+- [28. Find the Index of the First Occurrence in a String](problems/two_pointers/find_index_of_first_occurrence.py)
 - [11. Container With Most Water](problems/two_pointers/max_area.py)
 - [1855. Maximum Distance Between a Pair of Values](problems/two_pointers/max_distance_between_pairs.py)
 - [88. Merge Sorted Array](problems/two_pointers/merge_sorted.py)
-- [283. Move Zeroes](problems/two_pointers/move_zeros.py)
+- [283. Move Zeroes](problems/two_pointers/move_zeroes.py)
 - [26. Remove Duplicates from Sorted Array](problems/two_pointers/remove_duplicates.py)
 - [27. Remove Element](problems/two_pointers/remove_element.py)
 - [344. Reverse String](problems/two_pointers/reverse_string.py)
 - [228. Summary Ranges](problems/two_pointers/summary_ranges.py)
-- [167. Two Sum II - Input Array Is Sorted](problems/two_pointers/two_sum_2.py)
+- [167. Two Sum II - Input Array Is Sorted](problems/two_pointers/two_sum_ii.py)
 - [125. Valid Palindrome](problems/two_pointers/valid_palindrome.py)
 
 ### Binary Search
 
 - [704. Binary Search](problems/binary_search/binary_search.py)
 - [875. Koko Eating Bananas](problems/binary_search/koko_eating_bananas.py)
-- [153. Find Minimum in Rotated Sorted Array](problems/binary_search/min_rotated_sorted_array.py)
+- [153. Find Minimum in Rotated Sorted Array](problems/binary_search/find_minimum_in_rotated_sorted_array.py)
 - [33. Search in Rotated Sorted Array](problems/binary_search/search_in_rotated_sorted_array.py)
-- [81. Search in Rotated Sorted Array II](problems/binary_search/search_in_sorted_array_2.py)
-- [35. Search Insert Position](problems/binary_search/search_insert.py)
+- [81. Search in Rotated Sorted Array II](problems/binary_search/search_in_rotated_sorted_array_ii.py)
 - [35. Search Insert Position](problems/binary_search/search_insert_position.py)
 
 ### Prefix Sum
@@ -117,10 +116,10 @@ Next areas to build properly:
 
 ### Linked List
 
-- [142. Linked List Cycle II](problems/linked-list/linked_list2.py)
 - [141. Linked List Cycle](problems/linked-list/linked_list_cycle.py)
-- [21. Merge Two Sorted Lists](problems/linked-list/merge_two_list.py)
-- [876. Middle of the Linked List](problems/linked-list/midle_linked_list.py)
+- [142. Linked List Cycle II](problems/linked-list/linked_list_cycle_ii.py)
+- [21. Merge Two Sorted Lists](problems/linked-list/merge_two_sorted_lists.py)
+- [876. Middle of the Linked List](problems/linked-list/middle_linked_list.py)
 - [19. Remove Nth Node From End of List](problems/linked-list/remove_nth_node.py)
 - [206. Reverse Linked List](problems/linked-list/reverse_linked_list.py)
 
@@ -151,7 +150,7 @@ Next areas to build properly:
 
 ### Simulation
 
-- [485. Max Consecutive Ones](problems/simulation/max_consecutives_ones.py)
+- [485. Max Consecutive Ones](problems/simulation/max_consecutive_ones.py)
 
 ---
 
@@ -245,24 +244,41 @@ Best answer from many choices?
 
 ---
 
-## Repo Check
+## Repo Cleanup Done
 
-I checked the repo structure and Python files.
+I cleaned the repo so the README and the actual files match.
 
-What looks good:
+Changed in this cleanup:
 
-- README now matches the actual folders and solution files.
-- Python files compile successfully.
-- Problems are grouped by pattern folders.
-- Pattern notes are already present for future revision.
+- Removed duplicate solution files:
+  - `search_insert.py`
+  - `max_consequitives_ones.py`
+- Renamed typo or unclear filenames:
+  - `len_of_longest_substtring.py` -> `longest_substring_without_repeating_characters.py`
+  - `midle_linked_list.py` -> `middle_linked_list.py`
+  - `max_consecutive_ones_III.py` -> `max_consecutive_ones_iii.py`
+  - `search_in_sorted_array_2.py` -> `search_in_rotated_sorted_array_ii.py`
+  - `min_rotated_sorted_array.py` -> `find_minimum_in_rotated_sorted_array.py`
+  - `linked_list2.py` -> `linked_list_cycle_ii.py`
+  - `merge_two_list.py` -> `merge_two_sorted_lists.py`
+  - `max_consecutives_ones.py` -> `max_consecutive_ones.py`
+  - `3_sum.py` -> `three_sum.py`
+  - `3_sum_closest.py` -> `three_sum_closest.py`
+  - `4_sum.py` -> `four_sum.py`
+  - `two_sum_2.py` -> `two_sum_ii.py`
+  - `move_zeros.py` -> `move_zeroes.py`
+  - `find_index_of_first_occ.py` -> `find_index_of_first_occurrence.py`
+  - `fruit_into_basket.py` -> `fruit_into_baskets.py`
+- Fixed LeetCode method names in files where the method name did not match the platform.
+- Fixed wrong problem headers like Summary Ranges, Subarray Sum Equals K, Binary Subarrays With Sum, and Maximum Average Subarray I.
+- Removed repeated `class Solution` blocks from duplicate-solution files.
+- Fixed the sliding-window bug in Longest Substring Without Repeating Characters by using `while` when shrinking the window.
+- Checked all Python files for syntax errors.
 
-Things still remaining to clean later:
+Still left for future practice:
 
-- `search_insert.py` and `search_insert_position.py` both solve **35. Search Insert Position**. Keep one or use one as an alternate solution.
-- `max_consecutive_ones_III.py` and `max_consequitives_ones.py` both solve **1004. Max Consecutive Ones III**. Keep one file and delete/rename the duplicate.
-- `summary_ranges.py` has the correct Summary Ranges code/link, but its header says problem 28. It should be **228. Summary Ranges**.
-- Some filenames have spelling mistakes, like `midle_linked_list.py`, `len_of_longest_substtring.py`, and `max_consequitives_ones.py`.
-- Some pattern notes exist, but matching problem folders are not started yet: Stack, Trees, Graphs, DP, Backtracking, Heap.
+- Add actual problem folders/files for Stack, Trees, Graphs, Backtracking, Dynamic Programming, and Heap.
+- Keep adding notes in the existing pattern markdown files while solving.
 
 ---
 

@@ -35,7 +35,7 @@ from typing import Optional
 from listnode import ListNode,build_linked_list,print_linked_list
 
 class Solution:
-    def mergeTwoPointers(self, list1: Optional[ListNode], list2: Optional[ListNode]):
+    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]):
         dummy = ListNode()
         current = dummy
 
@@ -60,6 +60,6 @@ sol = Solution()
 l1 = build_linked_list([1, 2, 4])
 l2 = build_linked_list([1, 3, 4])
 
-merged = sol.mergeTwoPointers(l1, l2)
+merged = sol.mergeTwoLists(l1, l2)
 
 print_linked_list(merged)

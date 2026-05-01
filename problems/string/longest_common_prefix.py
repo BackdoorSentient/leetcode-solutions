@@ -22,7 +22,7 @@
 
 from typing import List
 class Solution:
-    def longestPrefix(self,strs:List[str]) -> str:
+    def longestCommonPrefix(self,strs:List[str]) -> str:
         prefix=strs[0]
 
         for value in strs[1:]:
@@ -34,5 +34,5 @@ class Solution:
         return prefix
 
 sol=Solution()
-print(sol.longestPrefix(["flower","flow","flight"]))
-# print(sol.longestPrefix(["dog","racecar","car"]))
+print(sol.longestCommonPrefix(["flower","flow","flight"]))
+# print(sol.longestCommonPrefix(["dog","racecar","car"]))

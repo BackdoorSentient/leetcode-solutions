@@ -50,7 +50,7 @@
 # ------------------------------------------------------------
 
 class Solution:
-    def minSubarray(self,s:str,t:str):
+    def minWindow(self,s:str,t:str):
         if len(s)<len(t):
             return ""
 
