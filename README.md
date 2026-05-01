@@ -13,6 +13,11 @@ The goal is simple: solve problems, understand the pattern, write clean notes, a
 - **LinkedIn:** <https://linkedin.com/in/aniketwaichal>
 
 ---
+## LeetCode Progress
+
+[![LeetCode Stats](https://leetcard.jacoblin.cool/aniketwaichal?theme=dark&font=Karma&ext=heatmap)](https://leetcode.com/aniketwaichal)
+
+---
 
 ## Current Repo Status
 
