@@ -244,41 +244,18 @@ Best answer from many choices?
 
 ---
 
-## Repo Cleanup Done
+## Future Practice
 
-I cleaned the repo so the README and the actual files match.
+Planned topics to add:
 
-Changed in this cleanup:
+- Stack
+- Trees
+- Graphs
+- Backtracking
+- Dynamic Programming
+- Heap / Priority Queue
 
-- Removed duplicate solution files:
-  - `search_insert.py`
-  - `max_consequitives_ones.py`
-- Renamed typo or unclear filenames:
-  - `len_of_longest_substtring.py` -> `longest_substring_without_repeating_characters.py`
-  - `midle_linked_list.py` -> `middle_linked_list.py`
-  - `max_consecutive_ones_III.py` -> `max_consecutive_ones_iii.py`
-  - `search_in_sorted_array_2.py` -> `search_in_rotated_sorted_array_ii.py`
-  - `min_rotated_sorted_array.py` -> `find_minimum_in_rotated_sorted_array.py`
-  - `linked_list2.py` -> `linked_list_cycle_ii.py`
-  - `merge_two_list.py` -> `merge_two_sorted_lists.py`
-  - `max_consecutives_ones.py` -> `max_consecutive_ones.py`
-  - `3_sum.py` -> `three_sum.py`
-  - `3_sum_closest.py` -> `three_sum_closest.py`
-  - `4_sum.py` -> `four_sum.py`
-  - `two_sum_2.py` -> `two_sum_ii.py`
-  - `move_zeros.py` -> `move_zeroes.py`
-  - `find_index_of_first_occ.py` -> `find_index_of_first_occurrence.py`
-  - `fruit_into_basket.py` -> `fruit_into_baskets.py`
-- Fixed LeetCode method names in files where the method name did not match the platform.
-- Fixed wrong problem headers like Summary Ranges, Subarray Sum Equals K, Binary Subarrays With Sum, and Maximum Average Subarray I.
-- Removed repeated `class Solution` blocks from duplicate-solution files.
-- Fixed the sliding-window bug in Longest Substring Without Repeating Characters by using `while` when shrinking the window.
-- Checked all Python files for syntax errors.
-
-Still left for future practice:
-
-- Add actual problem folders/files for Stack, Trees, Graphs, Backtracking, Dynamic Programming, and Heap.
-- Keep adding notes in the existing pattern markdown files while solving.
+I will keep adding solutions and notes as I solve more problems.
 
 ---
 
